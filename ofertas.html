@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ofertas Exclusivas | Corte y Ritual</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                background: "#121414",
+                surface: "#121414",
+                "surface-container-low": "#1a1c1c",
+                "surface-container": "#1e2020",
+                "surface-container-lowest": "#0c0f0f",
+                "secondary-container": "#5d4037",
+                "on-surface": "#e2e2e2",
+                "on-surface-variant": "#c4c7c7",
+                primary: "#c8c6c5",
+                secondary: "#e7bdb1",
+                tertiary: "#e9c349",
+                "tertiary-container": "#cca730",
+                "on-tertiary": "#3c2f00",
+                "on-tertiary-container": "#4f3d00",
+                "outline-variant": "#444748",
+              },
+              spacing: {
+                gutter: "24px",
+                "max-width": "1280px",
+                "margin-mobile": "16px",
+                "margin-desktop": "64px",
+              },
+              fontFamily: {
+                "headline-xl": ["Domine"],
+                "headline-lg": ["Domine"],
+                "headline-lg-mobile": ["Domine"],
+                "headline-md": ["Domine"],
+                "body-md": ["Hanken Grotesk"],
+                "body-lg": ["Hanken Grotesk"],
+                "label-caps": ["Hanken Grotesk"],
+              },
+              fontSize: {
+                "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+                "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "700" }],
+              },
+            },
+          },
+        };
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@600;700&family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #121414;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23333535' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            color: #e2e2e2;
+        }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .vintage-divider { height: 1px; background-color: #e9c349; width: 100%; }
+        .vintage-border { border: 1px solid #e9c349; }
+        .offer-glow {
+            background: radial-gradient(ellipse at top, rgba(233, 195, 73, 0.15) 0%, transparent 60%);
+        }
+        .offer-card:hover { transform: translateY(-4px); }
+        .offer-card { transition: transform 0.25s ease, border-color 0.25s ease; }
+</style>
+</head>
+<body class="font-body-md text-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
+
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop w-full max-w-max-width mx-auto h-20">
+<a class="flex items-center gap-3" href="index.html">
+<span class="material-symbols-outlined text-tertiary text-4xl">content_cut</span>
+<span class="text-headline-md font-headline-md text-primary uppercase tracking-tighter">Corte y Ritual</span>
+</a>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html#inicio">Inicio</a>
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html#servicios">Servicios</a>
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html#servicios">Precios</a>
+<a class="text-tertiary border-b-2 border-tertiary pb-1 font-label-caps text-label-caps uppercase tracking-widest" href="ofertas.html">Ofertas</a>
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html">Galería</a>
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html">Contacto</a>
+</nav>
+<a class="hidden md:inline-block bg-tertiary text-on-tertiary px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-tertiary-container" href="index.html">Reservar Cita</a>
+</div>
+</header>
+
+<main>
+<section class="relative py-20 md:py-28 offer-glow overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center">
+<p class="font-label-caps text-label-caps text-tertiary uppercase tracking-[0.2em] mb-4">Promociones limitadas</p>
+<div class="vintage-divider w-20 mx-auto mb-6"></div>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6 leading-tight">
+Ofertas <span class="text-tertiary">Exclusivas</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+Aprovecha descuentos en nuestros rituales de barbería clásica. Reserva con el código promocional y disfruta del trato premium en Cartagena.
+</p>
+</div>
+</section>
+
+<section class="px-margin-mobile md:px-margin-desktop pb-8 max-w-max-width mx-auto">
+<div class="relative bg-secondary-container border-2 border-tertiary p-8 md:p-12 overflow-hidden">
+<div class="absolute top-4 right-4 bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase tracking-widest px-4 py-2 rotate-3 shadow-lg">
+Más popular
+</div>
+<div class="grid md:grid-cols-2 gap-8 items-center relative z-10">
+<div>
+<p class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest mb-2">Pack del mes</p>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Ritual Completo Corte + Barba</h2>
+<p class="text-on-surface-variant mb-6">Toalla caliente, perfilado de barba, corte a medida y acabado con aceites esenciales. La experiencia definitiva de caballero.</p>
+<div class="flex items-baseline gap-4 mb-6">
+<span class="text-on-surface-variant line-through text-xl">12€</span>
+<span class="font-headline-lg text-tertiary">9,50€</span>
+<span class="bg-tertiary/20 text-tertiary font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest">-21%</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4">Código: <span class="text-tertiary font-bold tracking-widest">RITUAL21</span></p>
+<a class="inline-block bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary-container transition-all" href="index.html">Reservar ahora</a>
+</div>
+<div class="flex justify-center">
+<div class="w-full max-w-sm aspect-square vintage-border flex items-center justify-center bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[120px] opacity-80">diamond</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Todas las promociones</h2>
+<div class="vintage-divider w-16 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<span class="absolute -top-3 left-6 bg-error-container text-on-error-container font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest text-[10px]">Martes</span>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">calendar_today</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Martes de Caballero</h3>
+<p class="text-on-surface-variant mb-4">20% de descuento en corte de caballero todos los martes de 10:00 a 14:00.</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="line-through text-on-surface-variant">10€</span>
+<span class="text-tertiary font-headline-md text-headline-md">8€</span>
+</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: MARTES20</p>
+</article>
+
+<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<span class="absolute -top-3 left-6 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest text-[10px]">Nuevo cliente</span>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">person_add</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Primera Visita</h3>
+<p class="text-on-surface-variant mb-4">Bienvenida especial: 10% en tu primer servicio en Corte y Ritual.</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="text-tertiary font-headline-md text-headline-md">Desde 7,20€</span>
+</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: BIENVENIDO10</p>
+</article>
+
+<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<span class="absolute -top-3 left-6 bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest text-[10px]">Pack</span>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">family_restroom</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Pack Padre e Hijo</h3>
+<p class="text-on-surface-variant mb-4">Dos cortes clásicos en la misma visita. Ideal para compartir el ritual.</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="line-through text-on-surface-variant">20€</span>
+<span class="text-tertiary font-headline-md text-headline-md">16€</span>
+</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: PADREHIJO</p>
+</article>
+
+<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">spa</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Ritual de Barba Premium</h3>
+<p class="text-on-surface-variant mb-4">Arreglo de barba con mascarilla hidratante y masaje facial incluido.</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="line-through text-on-surface-variant">8€</span>
+<span class="text-tertiary font-headline-md text-headline-md">6,50€</span>
+</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: BARBA6</p>
+</article>
+
+<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">school</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Descuento Estudiante</h3>
+<p class="text-on-surface-variant mb-4">Presenta tu carnet universitario y obtén 15% en cualquier corte.</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="text-tertiary font-headline-md text-headline-md">8,50€</span>
+</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: ESTUDIANTE15</p>
+</article>
+
+<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">loyalty</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Tarjeta Fidelidad</h3>
+<p class="text-on-surface-variant mb-4">Tras 5 visitas, tu 6.ª incluye tratamiento capilar de regalo.</p>
+<div class="flex items-baseline gap-2 mb-4">
+<span class="text-tertiary font-label-caps text-label-caps uppercase tracking-widest">Gratis</span>
+</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Pregunta en recepción</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-max-width mx-auto text-center vintage-border bg-surface-container p-10 md:p-14">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">¿Listo para tu transformación?</h2>
+<p class="text-on-surface-variant mb-8 max-w-xl mx-auto">Menciona tu código promocional al reservar. Ofertas sujetas a disponibilidad y no acumulables salvo indicación contraria.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary-container transition-all" href="index.html">Volver al inicio</a>
+<a class="vintage-border text-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary/10 transition-all" href="index.html#servicios">Ver servicios</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-surface-container-lowest border-t border-outline-variant py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center md:text-left items-center">
+<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+<span class="text-headline-md font-headline-md text-primary mb-4 uppercase tracking-tighter">Corte y Ritual</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">El arte de la barbería clásica en el corazón de Cartagena.</p>
+</div>
+<div class="flex flex-col items-center mb-8 md:mb-0">
+<p class="font-body-md text-body-md text-on-surface mb-2 font-label-caps text-label-caps uppercase tracking-widest">
+© 2024 Corte y Ritual. Calle Pintor Balaca 4. Horario: L-V 10:00-20:00, S 09:00-14:00.
+</p>
+</div>
+<div class="flex justify-center md:justify-end gap-6">
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest" href="index.html">Inicio</a>
+<a class="text-tertiary font-label-caps text-label-caps uppercase tracking-widest" href="ofertas.html">Ofertas</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
