@@ -181,8 +181,9 @@
             border: 1px solid rgba(233, 195, 73, 0.2);
         }
     </style>
+<link href="css/immersive.css" rel="stylesheet"/>
 </head>
-<body class="font-body-md text-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
+<body class="immersive-site font-body-md text-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
 <!-- TopNavBar -->
 <header class="bg-surface dark:bg-surface sticky top-0 z-50 docked full-width top-0 border-b border-outline-variant dark:border-outline-variant flat no shadows">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop w-full max-w-max-width mx-auto h-20">
@@ -195,7 +196,7 @@
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all" href="#servicios">Servicios</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all" href="#precios">Precios</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all" href="ofertas.html">Ofertas</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all" href="#galeria">Galería</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all nav-link-3d" href="#galeria">Galería</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all" href="#opiniones">Opiniones</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-label-caps text-label-caps uppercase tracking-widest hover:text-tertiary dark:hover:text-tertiary transition-all" href="#contacto">Contacto</a>
 </nav>
@@ -209,11 +210,12 @@
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden" id="inicio">
-<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="A vintage barber shop interior with dark wood paneling, antique leather chairs, and warm, moody lighting. A classic barber pole is visible in the background, and precise barber tools rest on a marble counter. High contrast, desaturated tones with rich shadows and crisp highlights, embodying an industrial classic aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFVeaG7RFrrFgQGVjKW38cYNsKiYYKSRNZ3AoxXbowrixuPUBrk-GtiAWvvz8qbIZm2RP-4l7O8R0GjsZ4C5rDUqWJ89xbGgKSglJo6276qXtwz1icHxT5Rr41n9DYEsa1oaVYcq7a0in2ftFOzPDlSD9Ek7ExLAP-1PNZpeVAbikDMBVkn8TFsboepLXowDiDaXVuaS_CsFIyHQVPk2Jod5fFmCB3pXN1R_EGsBFqgU3juBSLf6U41q7JKAY90bdasQjDGsrrkcJP');">
-<div class="absolute inset-0 bg-background/80"></div>
+<section class="section-immersive parallax-section relative min-h-[90vh] flex items-center justify-center overflow-hidden" id="inicio">
+<div class="hero-shine"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center hero-parallax parallax-bg" data-alt="Interior de barbería clásica con sillas de cuero y luz cálida" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFVeaG7RFrrFgQGVjKW38cYNsKiYYKSRNZ3AoxXbowrixuPUBrk-GtiAWvvz8qbIZm2RP-4l7O8R0GjsZ4C5rDUqWJ89xbGgKSglJo6276qXtwz1icHxT5Rr41n9DYEsa1oaVYcq7a0in2ftFOzPDlSD9Ek7ExLAP-1PNZpeVAbikDMBVkn8TFsboepLXowDiDaXVuaS_CsFIyHQVPk2Jod5fFmCB3pXN1R_EGsBFqgU3juBSLf6U41q7JKAY90bdasQjDGsrrkcJP');">
+<div class="absolute inset-0 bg-background/75"></div>
 </div>
-<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center">
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center reveal-stagger">
 <div class="vintage-divider w-24 mb-8"></div>
 <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6 leading-tight">
                     El Arte de la Barbería Clásica en <span class="text-tertiary">Cartagena</span>
@@ -222,26 +224,22 @@
                     Cortes de precisión y rituales de barba tradicionales en Calle Pintor Balaca 4. Donde la herencia se encuentra con el detalle.
                 </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-tertiary-container focus:outline-none">
-                        Reserva tu Cita
-                    </button>
-<button class="vintage-border bg-transparent text-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-tertiary/10 focus:outline-none">
-                        Nuestros Servicios
-                    </button>
+<a class="btn-3d bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-tertiary-container focus:outline-none inline-block" href="#contacto">Reserva tu Cita</a>
+<a class="btn-3d vintage-border bg-transparent text-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-tertiary/10 focus:outline-none inline-block" href="#servicios">Nuestros Servicios</a>
 </div>
 </div>
 </section>
 <!-- Services & Pricing -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low relative" id="servicios">
+<section class="section-immersive py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low relative" id="servicios">
 <div class="max-w-max-width mx-auto">
-<div class="text-center mb-16">
+<div class="text-center mb-16 reveal" id="precios">
 <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Servicios &amp; Tarifas</h2>
 <div class="vintage-divider w-16 mx-auto mb-4"></div>
 <p class="font-body-md text-body-md text-on-surface-variant uppercase tracking-widest">Precisión en cada detalle</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-stagger">
 <!-- Service 1 -->
-<div class="bg-secondary-container p-8 border border-outline/20 group hover:border-tertiary transition-colors duration-300">
+<div class="card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20 group hover:border-tertiary transition-colors duration-300">
 <div class="h-48 mb-6 overflow-hidden bg-cover bg-center" data-alt="Close-up of a professional barber performing a precise haircut on a client using classic clippers. The lighting is dramatic and warm, focusing on the texture of the hair and the metallic gleam of the tools, conveying a sense of mastery and industrial classic style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWugXwj9D4gT8hUCPPlWYB39EG7yLC4VXhPBMfL-cyVT3P1v6sY2V35645WyECEP-cUtVBSiV2pVx7mYEVowEdFLtJK5_BTAj8CG0oGp-0iRjfOX9pjnRF3rxfdLgLkjo7Lh6ESZyXWN-yeYkcdk7J5f7N8-D0ZLH6LNk60NGpv0vI6nB3KIems9I_5bjmRigZ_FT9e9vc0sGKELRle3B6SWlJ5jpkfCAmSvHFR0oQvLnEoXXb4-Wym6adt6NMKhQ3pOqpoaBiRLZG');"></div>
 <div class="flex justify-between items-baseline mb-4 border-b border-tertiary/30 pb-2">
 <h3 class="font-headline-md text-headline-md text-on-surface">Corte de Caballero</h3>
@@ -250,7 +248,7 @@
 <p class="font-body-md text-body-md text-on-surface-variant">Un servicio de corte a medida, adaptado a tu estilo y fisionomía, finalizado con un lavado relajante y peinado profesional.</p>
 </div>
 <!-- Service 2 -->
-<div class="bg-secondary-container p-8 border border-outline/20 group hover:border-tertiary transition-colors duration-300">
+<div class="card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20 group hover:border-tertiary transition-colors duration-300">
 <div class="h-48 mb-6 overflow-hidden bg-cover bg-center" data-alt="A detailed shot of a barber trimming a client's beard with a straight razor. The scene is set in a dimly lit, vintage barbershop environment. High contrast shadows emphasize the sharp edge of the blade and the masculine atmosphere of the grooming ritual." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXXsjW6xjp5Az0t7yuM4iirNt8b__qvRmC0q9cuhYVaELcpyplJ-wehvFX0uyRW3Tzk5eG5KOsA3XmT_15sWyIJIF7_qx4a1eVjTzRWifmisqJZVdKkeEagsAqt35YEoJolcBjMD4tdFQ5xiMetzQwSaLPA-HwEGaAQWElVHuuH9OquRMucAlTKANtePq_PqGs0-Nonr-__N0j0RuYpY2rIHNLr4eS6sYn3py_ODs-rgA46U189ma6hK0eoMxgQrfHT1HQtCFc2Hya');"></div>
 <div class="flex justify-between items-baseline mb-4 border-b border-tertiary/30 pb-2">
 <h3 class="font-headline-md text-headline-md text-on-surface">Corte y Barba</h3>
@@ -259,7 +257,7 @@
 <p class="font-body-md text-body-md text-on-surface-variant">La experiencia completa. Corte clásico combinado con un arreglo de barba meticuloso, toalla caliente y aceites esenciales.</p>
 </div>
 <!-- Service 3 -->
-<div class="bg-secondary-container p-8 border border-outline/20 group hover:border-tertiary transition-colors duration-300">
+<div class="card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20 group hover:border-tertiary transition-colors duration-300">
 <div class="h-48 mb-6 overflow-hidden bg-cover bg-center" data-alt="A highly textured image showcasing antique barber tools, specifically a straight razor and a shaving brush resting on a dark wooden surface. The composition is structured and masculine, highlighting the heritage and artisanal mastery of traditional barbering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc-5v0GbwoLLNQGArPyyOgq2dfrRKJ8LFKHUl2DvHOKD2tKFP1Up9Y8g2eP6j1--n4nsq60Cfdwjtiw0UHZBpslWfGXQ5gTus_G7K5apQWvXW6LdNxigF5qb67RRcrTB_xTz-laW-WX79A7cjIHU_O8R-zynMVpFuOKTB3WtrrtW47zBuVLJuQrV1mfd_jvsixFaTGdQf2SBKZ0p5zNTe-S-iETV33Hsrz0Wxtcw1oaeY5iQYlE1vkZKr6iBAjBULnPjOnlwoobbIp');"></div>
 <div class="flex justify-between items-baseline mb-4 border-b border-tertiary/30 pb-2">
 <h3 class="font-headline-md text-headline-md text-on-surface">Arreglo de Barba</h3>
@@ -270,9 +268,77 @@
 </div>
 </div>
 </section>
+
+<!-- Galería -->
+<section class="section-immersive py-24 px-margin-mobile md:px-margin-desktop bg-surface relative" id="galeria">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Galería del Ritual</h2>
+<div class="vintage-divider w-16 mx-auto mb-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant uppercase tracking-widest">Momentos en la silla</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger">
+<div class="gallery-tile card-3d rounded-sm border border-outline/20 bg-secondary-container"><div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWugXwj9D4gT8hUCPPlWYB39EG7yLC4VXhPBMfL-cyVT3P1v6sY2V35645WyECEP-cUtVBSiV2pVx7mYEVowEdFLtJK5_BTAj8CG0oGp-0iRjfOX9pjnRF3rxfdLgLkjo7Lh6ESZyXWN-yeYkcdk7J5f7N8-D0ZLH6LNk60NGpv0vI6nB3KIems9I_5bjmRigZ_FT9e9vc0sGKELRle3B6SWlJ5jpkfCAmSvHFR0oQvLnEoXXb4-Wym6adt6NMKhQ3pOqpoaBiRLZG')"></div><div class="tile-shine"></div><div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/90 to-transparent"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Corte clásico</span></div></div>
+<div class="gallery-tile card-3d rounded-sm border border-outline/20 bg-secondary-container"><div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXXsjW6xjp5Az0t7yuM4iirNt8b__qvRmC0q9cuhYVaELcpyplJ-wehvFX0uyRW3Tzk5eG5KOsA3XmT_15sWyIJIF7_qx4a1eVjTzRWifmisqJZVdKkeEagsAqt35YEoJolcBjMD4tdFQ5xiMetzQwSaLPA-HwEGaAQWElVHuuH9OquRMucAlTKANtePq_PqGs0-Nonr-__N0j0RuYpY2rIHNLr4eS6sYn3py_ODs-rgA46U189ma6hK0eoMxgQrfHT1HQtCFc2Hya')"></div><div class="tile-shine"></div><div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/90 to-transparent"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Ritual de barba</span></div></div>
+<div class="gallery-tile card-3d rounded-sm border border-outline/20 bg-secondary-container"><div class="absolute inset-0 bg-cover bg-center parallax-bg" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc-5v0GbwoLLNQGArPyyOgq2dfrRKJ8LFKHUl2DvHOKD2tKFP1Up9Y8g2eP6j1--n4nsq60Cfdwjtiw0UHZBpslWfGXQ5gTus_G7K5apQWvXW6LdNxigF5qb67RRcrTB_xTz-laW-WX79A7cjIHU_O8R-zynMVpFuOKTB3WtrrtW47zBuVLJuQrV1mfd_jvsixFaTGdQf2SBKZ0p5zNTe-S-iETV33Hsrz0Wxtcw1oaeY5iQYlE1vkZKr6iBAjBULnPjOnlwoobbIp')"></div><div class="tile-shine"></div><div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/90 to-transparent"><span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Maestría artesanal</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- Opiniones -->
+<section class="section-immersive py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low relative" id="opiniones">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Opiniones</h2>
+<div class="vintage-divider w-16 mx-auto mb-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant uppercase tracking-widest">Lo que dicen nuestros clientes</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-stagger">
+<blockquote class="testimonial-3d card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20">
+<div class="flex gap-1 text-tertiary mb-4"><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span></div>
+<p class="text-on-surface-variant mb-4">"El mejor corte de Cartagena. Ambiente vintage y trato impecable."</p>
+<cite class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest not-italic">— Miguel R.</cite>
+</blockquote>
+<blockquote class="testimonial-3d card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20">
+<div class="flex gap-1 text-tertiary mb-4"><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span></div>
+<p class="text-on-surface-variant mb-4">"El ritual de barba es una experiencia. Volveré cada mes sin falta."</p>
+<cite class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest not-italic">— Carlos V.</cite>
+</blockquote>
+<blockquote class="testimonial-3d card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20">
+<div class="flex gap-1 text-tertiary mb-4"><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span></div>
+<p class="text-on-surface-variant mb-4">"Profesionalidad clásica con detalle moderno. Totalmente recomendado."</p>
+<cite class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest not-italic">— Antonio L.</cite>
+</blockquote>
+</div>
+</div>
+</section>
+
+<!-- Contacto -->
+<section class="section-immersive py-24 px-margin-mobile md:px-margin-desktop bg-surface relative" id="contacto">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Contacto &amp; Reservas</h2>
+<div class="vintage-divider w-16 mx-auto mb-4"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">Calle Pintor Balaca 4, Cartagena</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal-stagger">
+<div class="card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">schedule</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Horario</h3>
+<p class="text-on-surface-variant mb-2">Lunes a Viernes: 10:00 – 20:00</p>
+<p class="text-on-surface-variant">Sábados: 09:00 – 14:00</p>
+</div>
+<div class="card-3d card-3d-glow bg-secondary-container p-8 border border-outline/20 flex flex-col justify-center items-start">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">call</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Reserva tu cita</h3>
+<a class="btn-3d bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest inline-block" href="ofertas.html">Ver ofertas</a>
+</div>
+</div>
+</div>
+</section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant full-width py-12 flat no shadows">
+<footer class="reveal bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant full-width py-12 flat no shadows">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center md:text-left items-center">
 <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
 <span class="text-headline-md font-headline-md text-primary mb-4 uppercase tracking-tighter">Corte y Ritual</span>
@@ -292,4 +358,5 @@
 </div>
 </div>
 </footer>
+<script src="js/immersive.js" defer></script>
 </body></html>

@@ -71,11 +71,10 @@
         .offer-glow {
             background: radial-gradient(ellipse at top, rgba(233, 195, 73, 0.15) 0%, transparent 60%);
         }
-        .offer-card:hover { transform: translateY(-4px); }
-        .offer-card { transition: transform 0.25s ease, border-color 0.25s ease; }
 </style>
+<link href="css/immersive.css" rel="stylesheet"/>
 </head>
-<body class="font-body-md text-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
+<body class="immersive-site font-body-md text-body-md antialiased selection:bg-tertiary selection:text-on-tertiary">
 
 <header class="bg-surface sticky top-0 z-50 border-b border-outline-variant">
 <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop w-full max-w-max-width mx-auto h-20">
@@ -88,16 +87,17 @@
 <a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html#servicios">Servicios</a>
 <a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html#servicios">Precios</a>
 <a class="text-tertiary border-b-2 border-tertiary pb-1 font-label-caps text-label-caps uppercase tracking-widest" href="ofertas.html">Ofertas</a>
-<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html">Galería</a>
-<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all" href="index.html">Contacto</a>
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all nav-link-3d" href="index.html#galeria">Galería</a>
+<a class="text-on-surface-variant hover:text-tertiary font-label-caps text-label-caps uppercase tracking-widest transition-all nav-link-3d" href="index.html#contacto">Contacto</a>
 </nav>
 <a class="hidden md:inline-block bg-tertiary text-on-tertiary px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-tertiary-container" href="index.html">Reservar Cita</a>
 </div>
 </header>
 
 <main>
-<section class="relative py-20 md:py-28 offer-glow overflow-hidden">
-<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center">
+<section class="section-immersive parallax-section relative py-20 md:py-28 offer-glow overflow-hidden">
+<div class="hero-shine"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center reveal-stagger">
 <p class="font-label-caps text-label-caps text-tertiary uppercase tracking-[0.2em] mb-4">Promociones limitadas</p>
 <div class="vintage-divider w-20 mx-auto mb-6"></div>
 <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6 leading-tight">
@@ -109,8 +109,8 @@ Aprovecha descuentos en nuestros rituales de barbería clásica. Reserva con el 
 </div>
 </section>
 
-<section class="px-margin-mobile md:px-margin-desktop pb-8 max-w-max-width mx-auto">
-<div class="relative bg-secondary-container border-2 border-tertiary p-8 md:p-12 overflow-hidden">
+<section class="section-immersive px-margin-mobile md:px-margin-desktop pb-8 max-w-max-width mx-auto">
+<div class="card-3d card-3d-glow relative bg-secondary-container border-2 border-tertiary p-8 md:p-12 overflow-hidden reveal">
 <div class="absolute top-4 right-4 bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase tracking-widest px-4 py-2 rotate-3 shadow-lg">
 Más popular
 </div>
@@ -125,26 +125,26 @@ Más popular
 <span class="bg-tertiary/20 text-tertiary font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest">-21%</span>
 </div>
 <p class="text-sm text-on-surface-variant mb-4">Código: <span class="text-tertiary font-bold tracking-widest">RITUAL21</span></p>
-<a class="inline-block bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary-container transition-all" href="index.html">Reservar ahora</a>
+<a class="btn-3d inline-block bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary-container transition-all" href="index.html#contacto">Reservar ahora</a>
 </div>
 <div class="flex justify-center">
-<div class="w-full max-w-sm aspect-square vintage-border flex items-center justify-center bg-surface-container">
-<span class="material-symbols-outlined text-tertiary text-[120px] opacity-80">diamond</span>
+<div class="card-3d w-full max-w-sm aspect-square vintage-border flex items-center justify-center bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[120px] opacity-80" style="transform:translateZ(30px)">diamond</span>
 </div>
 </div>
 </div>
 </div>
 </section>
 
-<section class="py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<section class="section-immersive py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
 <div class="max-w-max-width mx-auto">
-<div class="text-center mb-12">
+<div class="text-center mb-12 reveal">
 <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Todas las promociones</h2>
 <div class="vintage-divider w-16 mx-auto"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-stagger">
 
-<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<article class="offer-card card-3d card-3d-glow bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
 <span class="absolute -top-3 left-6 bg-error-container text-on-error-container font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest text-[10px]">Martes</span>
 <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">calendar_today</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Martes de Caballero</h3>
@@ -156,7 +156,7 @@ Más popular
 <p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: MARTES20</p>
 </article>
 
-<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<article class="offer-card card-3d card-3d-glow bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
 <span class="absolute -top-3 left-6 bg-tertiary text-on-tertiary font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest text-[10px]">Nuevo cliente</span>
 <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">person_add</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Primera Visita</h3>
@@ -167,7 +167,7 @@ Más popular
 <p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: BIENVENIDO10</p>
 </article>
 
-<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<article class="offer-card card-3d card-3d-glow bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
 <span class="absolute -top-3 left-6 bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps px-3 py-1 uppercase tracking-widest text-[10px]">Pack</span>
 <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">family_restroom</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Pack Padre e Hijo</h3>
@@ -179,7 +179,7 @@ Más popular
 <p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: PADREHIJO</p>
 </article>
 
-<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<article class="offer-card card-3d card-3d-glow bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
 <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">spa</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Ritual de Barba Premium</h3>
 <p class="text-on-surface-variant mb-4">Arreglo de barba con mascarilla hidratante y masaje facial incluido.</p>
@@ -190,7 +190,7 @@ Más popular
 <p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: BARBA6</p>
 </article>
 
-<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<article class="offer-card card-3d card-3d-glow bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
 <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">school</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Descuento Estudiante</h3>
 <p class="text-on-surface-variant mb-4">Presenta tu carnet universitario y obtén 15% en cualquier corte.</p>
@@ -200,7 +200,7 @@ Más popular
 <p class="text-xs text-on-surface-variant uppercase tracking-widest">Código: ESTUDIANTE15</p>
 </article>
 
-<article class="offer-card bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
+<article class="offer-card card-3d card-3d-glow bg-secondary-container border border-outline-variant/30 p-8 relative group hover:border-tertiary">
 <span class="material-symbols-outlined text-tertiary text-4xl mb-4 block">loyalty</span>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Tarjeta Fidelidad</h3>
 <p class="text-on-surface-variant mb-4">Tras 5 visitas, tu 6.ª incluye tratamiento capilar de regalo.</p>
@@ -214,19 +214,19 @@ Más popular
 </div>
 </section>
 
-<section class="py-20 px-margin-mobile md:px-margin-desktop">
-<div class="max-w-max-width mx-auto text-center vintage-border bg-surface-container p-10 md:p-14">
+<section class="section-immersive py-20 px-margin-mobile md:px-margin-desktop">
+<div class="card-3d max-w-max-width mx-auto text-center vintage-border bg-surface-container p-10 md:p-14 reveal">
 <h2 class="font-headline-md text-headline-md text-on-surface mb-4">¿Listo para tu transformación?</h2>
 <p class="text-on-surface-variant mb-8 max-w-xl mx-auto">Menciona tu código promocional al reservar. Ofertas sujetas a disponibilidad y no acumulables salvo indicación contraria.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a class="bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary-container transition-all" href="index.html">Volver al inicio</a>
-<a class="vintage-border text-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary/10 transition-all" href="index.html#servicios">Ver servicios</a>
+<a class="btn-3d bg-tertiary text-on-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary-container transition-all" href="index.html">Volver al inicio</a>
+<a class="btn-3d vintage-border text-tertiary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-tertiary/10 transition-all" href="index.html#servicios">Ver servicios</a>
 </div>
 </div>
 </section>
 </main>
 
-<footer class="bg-surface-container-lowest border-t border-outline-variant py-12">
+<footer class="reveal bg-surface-container-lowest border-t border-outline-variant py-12">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto text-center md:text-left items-center">
 <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
 <span class="text-headline-md font-headline-md text-primary mb-4 uppercase tracking-tighter">Corte y Ritual</span>
@@ -243,5 +243,6 @@ Más popular
 </div>
 </div>
 </footer>
+<script src="js/immersive.js" defer></script>
 </body>
 </html>
